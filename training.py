@@ -17,6 +17,6 @@ results = model.train(data="video1_obb_data.yaml", epochs=1, imgsz=640)
 
 # Save to format used on drone
 
-model.export(format = "onnx", opset=17)
+model.export(format = "onnx", int8 = True, opset=17)
 # model.export(format = "imx")
 # model.export(format = "tflite")
